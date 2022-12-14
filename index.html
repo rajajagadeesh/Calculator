@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calulator.css">
+</head>
+<body>
+    
+    <!-- <form style="width: 300px;align-items: center;margin-left: auto;margin-right: auto;"> -->
+        <div class="main" style="width: 300px;;align-items: center;margin-left: auto;margin-right: auto;">
+        <fieldset style="border: none;">
+        <center><div class="container">
+            <h2 class="title">
+              <span class="title-word title-word-1">CAL</span>
+              <span class="title-word title-word-2">CU</span>
+              <span class="title-word title-word-3">LA</span>
+              <span class="title-word title-word-4">TOR</span>
+            </h2>
+          </div></center>
+
+          
+
+        <input type="text" id ='display' style="width: 100%;height:100px;background-color:rgba(246, 240, 240,0.3);margin:10px 0px;text-align: end;font-size: 25px;color:darkred;border: none;outline: none;">
+        <div class="buttons">
+            <div class="row">
+                <button class ='c' onclick="deletion()">C</button>
+                <button class ='ac' onclick="clearAll()">AC</button>
+                <button class ='on' onclick="on()">ON</button>
+                <button class ='off' onclick="off()">OFF</button>
+            </div>
+            <div class="row">
+                <button class ='numbers' onclick="display('1')">1</button>
+                <button class ='numbers' onclick="display('2')">2</button>
+                <button class ='numbers' onclick="display('3')">3</button>
+                <button class ='operators' onclick="display('+')">+</button>
+            </div>
+            <div class="row">
+                <button class ='numbers' onclick="display('4')">4</button>
+                <button class ='numbers' onclick="display('5')">5</button>
+                <button class ='numbers' onclick="display('6')">6</button>
+                <button class ='operators' onclick="display('-')">-</button>
+            </div>
+            <div class="row">
+                <button class ='numbers' onclick="display('7')">7</button>
+                <button class ='numbers' onclick="display('8')">8</button>
+                <button class ='numbers' onclick="display('9')">9</button>
+                <button class ='operators' onclick="display('*')">*</button>
+                
+            </div> 
+            <div class="row">
+                <button class ='opeartors' onclick="display('%')">%</button>
+                <button class ='numbers' onclick="display('0')">0</button>
+                <button class ='operators' onclick="display('/')">/</button>
+                <button class ='numbers' onclick="output()">=</button>
+                
+            </div>
+        </div>
+    </fieldset>
+</div>
+    
+
+
+<script src="./calculator.js"></script>
+
+</body>
+</html>
